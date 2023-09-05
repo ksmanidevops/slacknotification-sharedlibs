@@ -23,5 +23,6 @@ def call(String buildStatus = 'STARTED') {
   }
 
   // Calling the slackSend function to Send notifications.
-  slackSend (color: colorCode, message: summary)
+  //slackSend (color: colorCode, message: summary)
+  slackSend (color: colorCode, message: summary, teamDomain: 'ksmanitech55', tokenCredentialId: '35db6b40-a215-4b7d-83f8-95777064d1e2',  channel: '#devops')
 }
